@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+[class*="col-"] {
+  width: 100%;
+}
+
 body {
 
   display:flex;
