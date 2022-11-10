@@ -4,7 +4,7 @@
 }
 
 @media (max-width: 600px) {
-  section {
+  article {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
@@ -17,14 +17,6 @@ body {
   color: #1e5cd9;
   font-family: "Lucida Console", "Courier New", monospace;
 
-}
-
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
 }
 
 .container{
