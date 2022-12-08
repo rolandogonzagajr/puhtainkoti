@@ -3,182 +3,271 @@
   padding: 0;
 }
 
-
-body {
-
-  display:flex;
-  justify-content: center;
-  color: #1e5cd9;
-  font-family: "Lucida Console", "Courier New", monospace;
-
-}
-
-.container{
-
-    width:100vw;
-
-}
-
-    .topnav {
-      background-color: rgb(253, 253, 253);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      font-family: "Lucida Console", "Courier New", monospace;
-      
-    }
-    
-  .logo {
-    padding: 0 20;
+@media only screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
   }
-  
-    .topnav a {
-      float: left;
-      color: #228ea9;
-      text-align: center;
+  .item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .customerfaces {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+
+  .customerfaces img {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+
+  .image {
+    width: 80% !important;
+  }
+  article {
+    width: 100% !important;
+  }
+  .description {
+    width: 80% !important;
+    margin-bottom: 20px;
+  }
+
+  #orderbutton {
+    margin-left: inherit !important;
+  }
+  .footer{flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+  }
+}
+
+#homepage {
+  display: flex;
+  justify-content: right;
+  text-align: justify;
+  color: #436cbd;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.5vw;
+  line-height: 1.4;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+#servicespage {
+  display: flex;
+  justify-content: right;
+  text-align: justify;
+  color: #436cbd;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.5vw;
+  line-height: 1.4;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+
+
+
+
+#contact {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box; 
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #228ea9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1e5cd9;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:#228ea9;
+}
+
+.container {
+  width: 100vw;
+}
+
+nav {
+  background-color: rgb(253, 253, 253);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.logo {
+  padding: 0 0;
+}
+
+nav a {
+  float: left;
+  color: #228ea9;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: rgb(185, 229, 249);
+  color: rgb(204, 73, 73);
+}
+
+nav a.active {
+  background-color: #1e5cd9;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+#orderbutton {
+  margin-left: auto;
+}
+
+.item {
+  display: flex;
+  padding: 40px 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+
+.description article {
+  width: 90%;
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: fit-content;
+  left: 0;
+  bottom: 0;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #1e5cd9;
+  text-align: center;
+}
+
+.background-image {
+  display: flex;
+  position: absolute;
+}
+
+/*.button {
+      background-color: #aaf3f5; 
+      border: none;
+      color: rgb(35, 13, 126);
       padding: 20px 20px;
+      text-align: center;
       text-decoration: none;
       font-size: 20px;
+      font-weight: bold
+    }
+    .button:hover {
+      background-color: white;
+      color: white;
+    }*/
+
+    .maincontainer {
+      position: relative;
+      width: 100%;
     }
     
-    .topnav a:hover {
-      background-color: rgb(185, 229, 249);
-      color: rgb(204, 73, 73);
+    /* Make the image responsive */
+    .maincontainer img {
+      width: 100%;
+      height: auto;
     }
     
-    .topnav a.active {
+    /* Style the button and place it in the middle of the container/image */
+    .maincontainer .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       background-color: #1e5cd9;
       color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
     }
     
-    p {
-      border: 2px solid green;
-  }
-  span {
-      background-color: rgb(173, 221, 230);
-  }
-    
-  
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 300px 300px;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-   
-  }
-  
-  .grid-container > div {
-    background-color: yellow;
-    text-align: center;
-    padding: 100px 0;
-    font-size: 30px;
-    
-  }
-
-
-/*.item1 {
-      background-image: url(/Cleaninglady.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      text-align:center;
-      border: crimson;
-      background: orange;
-      height:300px;
-      }
-  
-  .item2 {
-      background-image: url(/office.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      text-align:center;
-      border: crimson;
-      }
-      
-  
-  .item3 {
-  background-image: url(/window.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align:center;
-  border: crimson;
-  }
-  
-  .item4 {
-      background-image: url(/moving.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      text-align:center;
-      border: crimson;
-      }
-  
-  .item5 {
-  background-image: url(/special.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align:center;
-  border: crimson;
-      } 
-  
-  .item6 {
-      background-image: url(/construction.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      text-align:center;
-      border: crimson;
-      }*/
-  
-    h1 {
-        color: rgb(135, 96, 90);
-        text-align: left;
-        style: "font-size:100px; 
-        
+    .maincontainer .btn:hover {
+      background-color: rgb(136, 187, 218);
     }
-    
-    h2 {
-    text-align: right;
-      color: red;
-    }
-
-
-    .content-container {
-      
+    .testimonials {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0 4px;
     }
-
-    .item{
-      display:flex;
-      padding:40px 0;
+    
+    /* Create four equal columns that sits next to each other */
+    .customerfaces {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
     }
-
- 
-
-    .description {
-      display: flex;
-      justify-content: center;
-      width:50%; 
-      align-items: center;
+    
+    .customerfaces img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
     }
-
-    .description article{
-      width:70%;
-    }
-
-    .image{
-      width:50%;
-      display: flex;
-      align-items: center;
-    }
-
-    .image img {
-      max-width: 100%;
-    }
+    
