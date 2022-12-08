@@ -1,27 +1,112 @@
-<html>
-<lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puhtain Koti</title>
-    <link rel="stylesheet" href="puhtainkoti.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puhtain Koti</title>
+  <link rel="stylesheet" href="puhtainkoti.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+</head>
 
-  <body>
-    <h1> Puhtain Koti </h1>
+<body>
+<div class="container">
+  <nav>
+    <div class="logo">
+    </div>
+    <a class="active" href="puhtain.html">Puhtain Koti</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="ourservices.html">Our Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a id="orderbutton" href="order.html">Order Cleaning</a>
+  </nav>
+</div>
 
-    <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="ourservices.html">Our Services</a>
-      <a href="promo.html">Promo</a>
-      <a href="testimonials.html">Testimonials</a>
+
+  <div class="photogrid" style="max-width:500px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="testimonials" id="customerphoto">
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 1</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 2</h3>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 3</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 4</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
     </div>
 
+    <!-- Second Photo Grid-->
+    <div class="testimonials">
+      <div class="customerfaces">
+        <img src="Face.png" alt="face" style="width:100%">
+        <h3>Customer 5</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 6</h3>
+        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 7</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="customerfaces">
+        <img src="Face.png" alt="faceone" style="width:100%">
+        <h3>Customer 8</h3>
+        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="column">
+      <h4>Contact Request</h4>
+      <p>We will get back to you soon!</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="contact request" type="text" placeholder="Name" name="Name" required></p>
+        <p><input class="contact request" type="text" placeholder="Email" name="Email" required></p>
+        <p><input class="contact request" type="text" placeholder="Subject" name="Subject" required></p>
+        <p><input class="contact request" type="text" placeholder="Message" name="Message" required></p>
+        <button type="submit" class="button contact send">Send</button>
+      </form>
+    </div>
+    <div class="column">
+      <h4>About</h4>
+      <p><a href="#">About us</a></p>
+      <p><a href="#">We're hiring</a></p>
+      <p><a href="#">Payment</a></p>
+      <p><a href="#">Complaints</a></p>
+      <p><a href="#">Help</a></p>
+    </div>
+    <div class="column">
+      <h4>Store</h4>
+      <p>Puhtain Koti</p>
+      <p>044 xxx xxxx</p>
+      <p>puhtainkoti@gmail.com</p>
+      <br>
+      <h4>We accept</h4>
+      <p>Visa</p>
+      <p> Master Card</p>
+    </div>
+  </div>
 
 
-  </body>
+    </body>
 
 </html>
