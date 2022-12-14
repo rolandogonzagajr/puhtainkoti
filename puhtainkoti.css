@@ -3,56 +3,6 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 900px) {
-  nav {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
-  .item {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-
-
-  .customerfaces {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-
-
-  .customerfaces img {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-
-
-  .image {
-    width: 80% !important;
-  }
-  article {
-    width: 100% !important;
-  }
-  .description {
-    width: 80% !important;
-    margin-bottom: 20px;
-  }
-
-  #orderbutton {
-    margin-left: inherit !important;
-  }
-  .footer{flex-direction: column;
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-  }
-}
-
 #homepage {
   display: flex;
   justify-content: right;
@@ -63,6 +13,7 @@
   line-height: 1.4;
   background-color: #ffffff;
   font-weight: 400;
+  background-color: rgb(240, 247, 250);
 }
 
 #servicespage {
@@ -71,21 +22,40 @@
   text-align: justify;
   color: #436cbd;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vw;
   line-height: 1.4;
   background-color: #ffffff;
   font-weight: 400;
 }
 
-
-
-
-
-#contact {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box; 
+#contact {
+  color: #436cbd;
+  font-family: "Lucida Console", "Courier New", monospace;
+  line-height: 1.4;
+  background-color: #ffffff;
+  font-weight: 400;
+  background-color: rgb(240, 247, 250);
 }
 
-input[type=text], select, textarea {
+#order {
+  background-color: rgb(240, 247, 250);
+  color: #436cbd;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#testimonials {
+  background-color: rgb(240, 247, 250);
+  color: #436cbd;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: justify;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -96,7 +66,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #228ea9;
   color: white;
   padding: 12px 20px;
@@ -105,13 +75,13 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #1e5cd9;
 }
 
 .container {
   border-radius: 5px;
-  background-color:#228ea9;
+  background-color: #3122d8;
 }
 
 .container {
@@ -132,7 +102,7 @@ nav {
 
 nav a {
   float: left;
-  color: #228ea9;
+  color: #260cca;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
@@ -150,6 +120,7 @@ nav a.active {
   font-weight: bold;
   font-size: 30px;
 }
+
 #orderbutton {
   margin-left: auto;
 }
@@ -180,6 +151,7 @@ nav a.active {
   max-width: 100%;
   height: auto;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -187,14 +159,13 @@ nav a.active {
 .column {
   float: left;
   width: 33.33%;
-  padding: 10px;
+  padding: 20px;
   height: fit-content;
-  left: 0;
+  left: 10px;
   bottom: 0;
 }
+
 .footer {
-  position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: white;
@@ -202,72 +173,137 @@ nav a.active {
   text-align: center;
 }
 
-.background-image {
-  display: flex;
-  position: absolute;
+.maincontainer img {
+  width: 100%;
+  height: 100%;
+  position: inherit;
 }
 
-/*.button {
-      background-color: #aaf3f5; 
-      border: none;
-      color: rgb(35, 13, 126);
-      padding: 20px 20px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold
-    }
-    .button:hover {
-      background-color: white;
-      color: white;
-    }*/
+.maincontainer .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #1e5cd9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+}
 
-    .maincontainer {
-      position: relative;
-      width: 100%;
-    }
-    
-    /* Make the image responsive */
-    .maincontainer img {
-      width: 100%;
-      height: auto;
-    }
-    
-    /* Style the button and place it in the middle of the container/image */
-    .maincontainer .btn {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: #1e5cd9;
-      color: white;
-      font-size: 16px;
-      padding: 12px 24px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    
-    .maincontainer .btn:hover {
-      background-color: rgb(136, 187, 218);
-    }
-    .testimonials {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 4px;
-    }
-    
-    /* Create four equal columns that sits next to each other */
-    .customerfaces {
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
-    
-    .customerfaces img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-    }
-    
+.centeredtext {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #1409e7;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: 900;
+}
+
+.maincontainer .btn:hover {
+  background-color: rgb(136, 187, 218);
+}
+
+.testimonials {
+  display: flex;
+  padding: 0 20px;
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  height: fit-content;
+  background-color: rgb(185, 229, 249);
+  color: #436cbd;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.customerfaces {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 20px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.customerfaces img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.box {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0%;
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: rgb(185, 229, 249);
+  }
+
+  .centeredtext {
+    font-size: 7px;
+    margin-top: 40px !important;
+    bottom: 38% !important;
+  }
+
+  .btn {
+    margin-top: 50px;
+    padding: 6px 12px !important;
+  }
+  .item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 80% !important;
+  }
+
+  .image {
+    width: 80% !important;
+  }
+
+  article {
+    width: 100% !important;
+  }
+
+  .description {
+    width: 80% !important;
+    margin-bottom: 20px;
+  }
+
+  #orderbutton {
+    margin-left: inherit !important;
+  }
+
+  .footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(185, 229, 249);
+  }
+
+  .photogrid {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    font-size: 70%;
+  }
+}
